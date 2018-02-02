@@ -1,0 +1,103 @@
+/*CSS RESET*/
+html, body, div, ul, li, a,{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font: inherit;
+  vertical-align: baseline;
+  min-width: 0px;
+  letter-spacing: 1px;
+}
+h1{
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  font-size: 95px;
+  margin-bottom: 12px;
+}
+.type{
+  overflow: hidden;
+  margin: 0 auto;
+  letter-spacing: .20em;
+  animation: type 2s steps(7, end)
+}
+@keyframes type{
+  from{width:0}
+  to{width:100%}
+}
+
+li{
+  padding:5px;
+}
+
+.body{
+  margin: 0px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 15%;
+  margin-top: 3%;
+}
+
+.A1, .A2, .A3{
+  border: solid black 1px;
+  border-radius: 3px;
+  text-align: center;
+  margin: 2%;
+  padding: 10px;
+  cursor: pointer;
+  color: brown;
+  font-family: 'Dosis', sans-serif;
+  transition: ease all .1s;
+  box-shadow: -2px 5px 0px black;
+}
+.A1:hover, .A2:hover, .A3:hover{
+  transform: scale(1.03);
+}
+
+.A1Content, .A2Content, .A3Content{
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 50;
+  text-align: center;
+}
+.A1Heading{
+  padding: 5px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.A2Heading, .A3Heading{
+  padding: 5px;
+  padding-bottom: 7px;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Active{
+  background-color: brown;
+  color:white;
+  border-radius: 3px;
+}
+
+.Links{
+  display:flex;
+  flex-direction: row;
+  margin: 0px auto;
+}
+.LinkHome, .LinkGit, .LinkGitHub{
+  padding: 10px;
+  padding-bottom: 8px;
+  margin: 10px;
+  transition: all ease .1s;
+  cursor: pointer;
+}
+.LinkHome:hover, .LinkGit:hover, .LinkGitHub:hover{
+  transform: scale(1.15);
+  background-color: brown;
+  border-radius: 10px;
+}
