@@ -12,7 +12,9 @@ html, body, div, ul, li, a,{
 body{
   background-color: black;
 }
-
+ul{
+  text-decoration: none;
+}
 .borderbox{
   border: solid 1px slategrey;
   position: absolute;
@@ -179,13 +181,15 @@ font-size: 18px;
 .content5{
   position: absolute;
   color: grey;
-  top: calc(50% - 103px);
-  left: calc(50% - 166px);
+  top: calc(50% - 78px);
+  left: calc(50% - 185px);
   text-align: center;
   opacity: 0;
   transition: ease all 1s;
   font-size: 80px;
-  font-family: 'Bad Script', cursive;
+  font-family: 'Lobster', cursive;
+  font-weight: 100;
+  /*font-family: 'Bad Script', cursive;*/
   animation-name: glow;
   animation-iteration-count: 1;
   animation-duration: 2.5s;
