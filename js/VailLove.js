@@ -30,7 +30,6 @@ $('.Links').toggleClass('LinksGo');
 
 setTimeout(function(){
 $('.goldDot3').toggleClass('blink');
-$('.goldDot3').css('opacity', '1');
 }, 5200);
 
 setTimeout(function(){
@@ -44,6 +43,10 @@ $('.goldDot4').toggleClass('blink');
 setTimeout(function(){
 $('.goldDot1').toggleClass('blink');
 }, 5800);
+
+setTimeout(function(){
+$('.goldDot3').css('opacity', '1');
+}, 6300);
 
 var i = 0;
 function activate(){
@@ -73,6 +76,12 @@ function change(x){
         $('.content5').css("opacity","1");
         $('.circle1').css("background-color","black");
         $('.goldDot3').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(225deg)");
+        $('.insidecircle2').css("border-top", "1px solid black");
+        $('.insidecircle2').css("border-left", "1px solid black");
+        $('.insidecircle2').css("border-bottom", "1px solid black");
+        $('.insidecircle2').css("border-right", "1px solid black");
+
       }
       else{
         current = 1;
@@ -89,6 +98,11 @@ function change(x){
         $('.goldDot1').css("opacity","0");
         $('.goldDot2').css("opacity","0");
         $('.goldDot4').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(225deg)");
+        $('.insidecircle2').css("border-top", "1px solid white");
+        $('.insidecircle2').css("border-left", "1px solid white");
+        $('.insidecircle2').css("border-bottom", "1px solid white");
+        $('.insidecircle2').css("border-right", "1px solid white");
       }
       break;
 
@@ -99,6 +113,9 @@ function change(x){
         $('.content5').css("opacity","1");
         $('.circle2').css("background-color","black");
         $('.goldDot4').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(-135deg)");
+        $('.insidecircle2').css("border-top", "1px solid black");
+        $('.insidecircle2').css("border-left", "1px solid black");
       }
       else{
         current = 2;
@@ -115,6 +132,9 @@ function change(x){
         $('.goldDot2').css("opacity","0");
         $('.goldDot1').css("opacity","0");
         $('.goldDot3').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(135deg)");
+        $('.insidecircle2').css("border-top", "1px solid white");
+        $('.insidecircle2').css("border-left", "1px solid white");
       }
       break;
 
@@ -125,6 +145,8 @@ function change(x){
         $('.content5').css("opacity","1");
         $('.circle3').css("background-color","black");
         $('.goldDot2').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(-45deg)");
+        $('.insidecircle2').css("border-top", "1px solid black");
       }
       else{
         current = 3;
@@ -141,6 +163,8 @@ function change(x){
         $('.goldDot1').css("opacity","0");
         $('.goldDot3').css("opacity","0");
         $('.goldDot4').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(45deg)");
+        $('.insidecircle2').css("border-top", "1px solid white");
       }
       break;
 
@@ -151,6 +175,10 @@ function change(x){
         $('.content5').css("opacity","1");
         $('.circle4').css("background-color","black");
         $('.goldDot1').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(-225deg)");
+        $('.insidecircle2').css("border-top", "1px solid black");
+        $('.insidecircle2').css("border-left", "1px solid black");
+        $('.insidecircle2').css("border-bottom", "1px solid black");
       }
       else{
         current = 4;
@@ -167,6 +195,10 @@ function change(x){
         $('.goldDot2').css("opacity","0");
         $('.goldDot3').css("opacity","0");
         $('.goldDot4').css("opacity","0");
+        $('.insidecircle2').css("transform", "rotate(225deg)");
+        $('.insidecircle2').css("border-top", "1px solid white");
+        $('.insidecircle2').css("border-left", "1px solid white");
+        $('.insidecircle2').css("border-bottom", "1px solid white");
       }
       break;
   }

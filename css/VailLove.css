@@ -34,8 +34,22 @@ ul{
   height: 500px;
   left: calc(50% - 250px);
   top: calc(50% - 272px);
+  background-color: black;
+  z-index: 8;
+  transition: ease all 1s;
 }
-
+/*.insidecircle2{
+  position: absolute;
+  border: solid 2px slategrey;
+  border-radius: 50%;
+  width: 480px;
+  height: 480px;
+  left: calc(50% - 241px);
+  top: calc(50% - 263px);
+  background-color: black;
+  z-index: 8;
+  transition: ease all 1s;
+}*/
 .insidebox{
   position: absolute;
   border: solid 1px slategrey;
@@ -48,6 +62,8 @@ ul{
   animation-duration: 3.5s;
   animation-direction: alternate;
   transition: ease all 1s;
+  background-color: black;
+  z-index: 5;
 }
 .insidebox2{
   position: absolute;
@@ -61,6 +77,8 @@ ul{
   animation-duration: 3.5s;
   animation-direction: alternate;
   transition: ease all 1s;
+  z-index: 4;
+  background-color: black;
 }
 @keyframes main {
   0% {
@@ -90,7 +108,7 @@ ul{
   transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .circle1:hover{
   background-color: lightslategrey;
@@ -107,7 +125,7 @@ ul{
   transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .circle2:hover{
   background-color: lightslategrey;
@@ -123,7 +141,7 @@ ul{
   transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .circle3:hover{
   background-color: lightslategrey;
@@ -139,7 +157,7 @@ ul{
   transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .circle4:hover{
   background-color: lightslategrey;
@@ -167,20 +185,25 @@ ul{
 .content1, .content2, .content3, .content4{
 font-family: 'Poiret One', cursive;
 position: absolute;
-color: grey;
+color: ghostwhite;
 width: 150px;
-height: 150px;
-top: calc(50% - 60px);
+height: 80px;
+top: calc(50% - 50px);
 left: calc(50% - 75px);
 text-align: center;
 opacity: 0;
 transition: ease all 1s;
-font-size: 18px;
+font-size: 25px;
+z-index: 10;
+}
+
+.content1:hover, .content2:hover, .content3:hover, .content4:hover{
+  text-shadow: 2px 2px orange;
 }
 
 .content5{
   position: absolute;
-  color: grey;
+  color: lightsteelblue;
   top: calc(50% - 78px);
   left: calc(50% - 185px);
   text-align: center;
@@ -195,12 +218,14 @@ font-size: 18px;
   animation-duration: 2.5s;
   animation-delay: 2.5s;
   cursor: pointer;
+  z-index: 10;
 }
 @keyframes glow{
   0%{
     text-shadow: none;
   }
   50%{
+    color: whitesmoke;
     text-shadow: 3px 2px 2px darkgoldenrod;
   }
   100%{
@@ -208,8 +233,8 @@ font-size: 18px;
   }
 }
 .content5:hover{
-    color: slategrey;
-    text-shadow: 2px 2px 5px gold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px darkgoldenrod;
 }
 .go{
   opacity: 1;
@@ -227,7 +252,8 @@ font-size: 18px;
   transition: ease all .5s;
   cursor: pointer;
   opacity: 0;
-  z-index: 0;
+  z-index: 12;
+  pointer-events: none;
 }
 .goldDot2{
   position: absolute;
@@ -240,7 +266,8 @@ font-size: 18px;
   transition: ease all .5s;
   cursor: pointer;
   opacity: 0;
-  z-index: 0;
+  z-index: 12;
+  pointer-events: none;
 }
 .goldDot3{
   position: absolute;
@@ -253,7 +280,8 @@ font-size: 18px;
   transition: ease all .5s;
   cursor: pointer;
   opacity: 0;
-  z-index: 0;
+  z-index: 12;
+  pointer-events: none;
 }
 .goldDot4{
   position: absolute;
@@ -266,7 +294,8 @@ font-size: 18px;
   transition: ease all .5s;
   cursor: pointer;
   opacity: 0;
-  z-index: 0;
+  z-index: 12;
+  pointer-events: none;
 }
 
 .blink{
@@ -311,4 +340,112 @@ font-size: 18px;
 }
 .LinksGo{
   opacity: .6;
+}
+
+@media only screen and (max-height: 790px){
+
+.borderbox{
+  left: 20%;
+  top: 17%;
+  width: 60%;
+  height: 66%;
+}
+.insidecircle{
+  width: 350px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+
+}
+.insidebox{
+  width:350px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+}
+.insidebox2{
+  width: 360px;
+  height: 360px;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+.circle1{
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  left: calc(50% - 227px);
+}
+.circle2{
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  left: calc(50% + 212px);
+}
+.circle3{
+  width: 16px;
+  height: 16px;
+  left: calc(50% - 8px);
+  top: calc(50% - 227px);
+}
+.circle4{
+  width: 16px;
+  height: 16px;
+  left: calc(50% - 8px);
+  top: calc(50% + 212px);
+}
+.goldDot1{
+  left: calc(50% - 222px);
+  top: calc(50% - 3px);
+
+}
+.goldDot2{
+  left: calc(50% + 217px);
+  top: calc(50% - 3px);
+}
+.goldDot3{
+  top: calc(50% - 222px);
+  left: calc(50% - 3px);
+}
+
+.goldDot4{
+  left: calc(50%  - 3px);
+  top: calc(50% + 217px);
+}
+.content5{
+  font-size: 60px;
+  top: calc(50% - 42px);
+  left: calc(50% - 137px);
+}
+.content1, .content2, .content3,.content4{
+  font-size: 20px;
+  top: calc(50% - 12px);
+}
+
+.insidecircle2{
+  position: absolute;
+
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+  border-radius: 50%;
+  box-shadow: none;
+  width: 320px;
+  height: 320px;
+  left: calc(50% - 160px);
+  top: calc(50% - 160px);
+  z-index: 8;
+  transition: ease all 1s;
+  transform: rotate(45deg);
+}
+
+/*.insidecircle2:hover{
+  transform: rotate(360deg);
+  border-left: 1px solid orange;
+  border-bottom: 1px solid orange;
+  border-right: 1px solid orange;
+}*/
+
+
 }
